@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="27465" started-at="2023-02-02T14:52:05 EET" finished-at="2023-02-02T14:52:33 EET">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="27465" started-at="2023-02-02T14:52:05 EET" finished-at="2023-02-02T14:52:33 EET">
+      <class name="Test.GET_StatusCode_Test">
+        <test-method status="PASS" signature="Test_Public_GDPR()[pri:0, instance:Test.GET_StatusCode_Test@731a74c]" name="Test_Public_GDPR" duration-ms="3448" started-at="2023-02-02T14:52:05 EET" finished-at="2023-02-02T14:52:09 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Public_GDPR -->
+        <test-method status="PASS" signature="Test_Public_GetLocations()[pri:0, instance:Test.GET_StatusCode_Test@731a74c]" name="Test_Public_GetLocations" duration-ms="1159" started-at="2023-02-02T14:52:09 EET" finished-at="2023-02-02T14:52:10 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Public_GetLocations -->
+        <test-method status="PASS" signature="Test_Public_GetPolicy()[pri:0, instance:Test.GET_StatusCode_Test@731a74c]" name="Test_Public_GetPolicy" duration-ms="1327" started-at="2023-02-02T14:52:10 EET" finished-at="2023-02-02T14:52:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Public_GetPolicy -->
+        <test-method status="PASS" signature="Test_Public_GetProductsByCategory()[pri:0, instance:Test.GET_StatusCode_Test@731a74c]" name="Test_Public_GetProductsByCategory" duration-ms="2353" started-at="2023-02-02T14:52:11 EET" finished-at="2023-02-02T14:52:14 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Public_GetProductsByCategory -->
+        <test-method status="PASS" signature="Test_Public_GetReasons()[pri:0, instance:Test.GET_StatusCode_Test@731a74c]" name="Test_Public_GetReasons" duration-ms="2056" started-at="2023-02-02T14:52:14 EET" finished-at="2023-02-02T14:52:16 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Public_GetReasons -->
+      </class> <!-- Test.GET_StatusCode_Test -->
+      <class name="Test.POST_RegisterAnonymous_Test">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:Test.POST_RegisterAnonymous_Test@5a8806ef]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2023-02-02T14:52:05 EET" finished-at="2023-02-02T14:52:05 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="POST_RegisterAnonymous_Success()[pri:0, instance:Test.POST_RegisterAnonymous_Test@5a8806ef]" name="POST_RegisterAnonymous_Success" duration-ms="1581" started-at="2023-02-02T14:52:30 EET" finished-at="2023-02-02T14:52:32 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POST_RegisterAnonymous_Success -->
+      </class> <!-- Test.POST_RegisterAnonymous_Test -->
+      <class name="Test.POST_RegisterAnonymous2_Test">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:Test.POST_RegisterAnonymous2_Test@9660f4e]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2023-02-02T14:52:05 EET" finished-at="2023-02-02T14:52:05 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="POST_RegisterAnonymous2_Success()[pri:0, instance:Test.POST_RegisterAnonymous2_Test@9660f4e]" name="POST_RegisterAnonymous2_Success" duration-ms="1253" started-at="2023-02-02T14:52:29 EET" finished-at="2023-02-02T14:52:30 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POST_RegisterAnonymous2_Success -->
+      </class> <!-- Test.POST_RegisterAnonymous2_Test -->
+      <class name="Test.POST_CreateSupportContact_Test">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:Test.POST_CreateSupportContact_Test@4bbfb90a]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2023-02-02T14:52:24 EET" finished-at="2023-02-02T14:52:24 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="POST_CreateSupportContact_Success()[pri:0, instance:Test.POST_CreateSupportContact_Test@4bbfb90a]" name="POST_CreateSupportContact_Success" duration-ms="513" started-at="2023-02-02T14:52:24 EET" finished-at="2023-02-02T14:52:25 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POST_CreateSupportContact_Success -->
+      </class> <!-- Test.POST_CreateSupportContact_Test -->
+      <class name="Test.POST_ConfirmGDPR_Test">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:Test.POST_ConfirmGDPR_Test@a7e666]" name="BeforeMethod" is-config="true" duration-ms="13" started-at="2023-02-02T14:52:05 EET" finished-at="2023-02-02T14:52:05 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="POST_ConfirmGDPR_Not_Success()[pri:0, instance:Test.POST_ConfirmGDPR_Test@a7e666]" name="POST_ConfirmGDPR_Not_Success" duration-ms="2438" started-at="2023-02-02T14:52:16 EET" description="400 Not Success" finished-at="2023-02-02T14:52:18 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POST_ConfirmGDPR_Not_Success -->
+        <test-method status="PASS" signature="POST_ConfirmGDPR_Success()[pri:0, instance:Test.POST_ConfirmGDPR_Test@a7e666]" name="POST_ConfirmGDPR_Success" duration-ms="2673" started-at="2023-02-02T14:52:18 EET" description="200 Success" finished-at="2023-02-02T14:52:21 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POST_ConfirmGDPR_Success -->
+      </class> <!-- Test.POST_ConfirmGDPR_Test -->
+      <class name="Test.POST_ContactForm_Test">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:Test.POST_ContactForm_Test@30b8a058]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2023-02-02T14:52:05 EET" finished-at="2023-02-02T14:52:05 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="POST_ContactForm_Not_Success()[pri:0, instance:Test.POST_ContactForm_Test@30b8a058]" name="POST_ContactForm_Not_Success" duration-ms="1109" started-at="2023-02-02T14:52:21 EET" description="200 Success" finished-at="2023-02-02T14:52:22 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POST_ContactForm_Not_Success -->
+        <test-method status="PASS" signature="POST_ContactForm_Success()[pri:0, instance:Test.POST_ContactForm_Test@30b8a058]" name="POST_ContactForm_Success" duration-ms="1696" started-at="2023-02-02T14:52:22 EET" description="200 Success" finished-at="2023-02-02T14:52:24 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POST_ContactForm_Success -->
+      </class> <!-- Test.POST_ContactForm_Test -->
+      <class name="Test.POST_CreateDevice_Test">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:Test.POST_CreateDevice_Test@7494e528]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2023-02-02T14:52:05 EET" finished-at="2023-02-02T14:52:05 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="POST_CreateDevice_Success()[pri:0, instance:Test.POST_CreateDevice_Test@7494e528]" name="POST_CreateDevice_Success" duration-ms="763" started-at="2023-02-02T14:52:24 EET" finished-at="2023-02-02T14:52:24 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POST_CreateDevice_Success -->
+      </class> <!-- Test.POST_CreateDevice_Test -->
+      <class name="Test.POST_UpdateUserFCM_Test">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:Test.POST_UpdateUserFCM_Test@6c49835d]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2023-02-02T14:52:05 EET" finished-at="2023-02-02T14:52:05 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="POST_UpdateUserFCM_Success()[pri:0, instance:Test.POST_UpdateUserFCM_Test@6c49835d]" name="POST_UpdateUserFCM_Success" duration-ms="1312" started-at="2023-02-02T14:52:32 EET" description="200 Success" finished-at="2023-02-02T14:52:33 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POST_UpdateUserFCM_Success -->
+      </class> <!-- Test.POST_UpdateUserFCM_Test -->
+      <class name="Test.POST_MatchUser_Test">
+        <test-method status="PASS" signature="POST_MatchUser_Success()[pri:0, instance:Test.POST_MatchUser_Test@7c29daf3]" name="POST_MatchUser_Success" duration-ms="3744" started-at="2023-02-02T14:52:25 EET" description="200 Success" finished-at="2023-02-02T14:52:29 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- POST_MatchUser_Success -->
+      </class> <!-- Test.POST_MatchUser_Test -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
