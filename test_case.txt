@@ -1,0 +1,22 @@
+SendNotification çalışma şekli
+
+
+İlk olarak tokenList kontrolü yapılır. tokenList dolu ise her bir token için notification
+gönderimi applicationId'ye göre yapılır.
+İkinci olarak userIdList kontrolü yapılır. tokenList null veya boş ise userIdList dolu
+ise her bir userId'nin token bilgisi çekilir ve notification
+gönderimi applicationId'ye göre yapılır.
+Üçüncü olarak tokenList ve userIdList boş ise applicationId ile bütün token
+listesi çekilir ve notification gönderimi applicationId'ye göre yapılır.
+
+Aynı appid, userid ve tokenla POST CreateNotificationToken attığım zaman 204
+                                                                         Undocumented
+                                                                         Response headers
+Olamayan bir application id ile 404
+                                Undocumented
+                                Error: Not Found
+
+                                Response body
+                                Download
+                                Application not found with id 444444
+

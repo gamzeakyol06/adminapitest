@@ -1,0 +1,10 @@
+Test\POST_ConfirmGDPR_Test.class
+Test\POST_CreateDevice_Test.class
+Test\POST_RegisterAnonymous_Test.class
+Test\POST_UpdateUserFCM_Test.class
+Test\GET_StatusCode_Test.class
+Test\POST_ContactForm_Test.class
+Report\ExtendReporterNG.class
+Test\POST_MatchUser_Test.class
+Test\POST_CreateSupportContact_Test.class
+Test\POST_RegisterAnonymous2_Test.class
