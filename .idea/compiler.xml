@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="PamisAdminAPI_TEST" />
         <module name="api-test" />
         <module name="API_TEST" />
         <module name="PUBLICAPI_TEST" />

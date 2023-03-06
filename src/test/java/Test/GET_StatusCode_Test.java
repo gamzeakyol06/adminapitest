@@ -5,54 +5,74 @@ import static io.restassured.RestAssured.given;
 
 public class GET_StatusCode_Test extends Base {
 
+    // Client
     @Test
-    public void Test_Public_GetLocations() {
-        String token = doPostRequestAuthorize(MAIN_PAGE_URL + "CreateDevice");
-        given().headers("Authorization","Bearer "+token).
-            contentType("application/json").
-            when().
-            get(MAIN_PAGE_URL + "GetLocations").
-            then().
-            statusCode(200).log().all();
-    }
-    @Test
-    public void Test_Public_GetPolicy() {
-        String token = doPostRequestAuthorize(MAIN_PAGE_URL + "CreateDevice");
-        given().headers("Authorization","Bearer "+token).
+    public void Test_Client() {
+        given().headers("Authorization","Bearer ").
                 contentType("application/json").
                 when().
-                get(MAIN_PAGE_URL + "GetPolicy").
+                get(CLIENT_PAGE_URL + "").
+                then().
+                statusCode(200).log().all();
+
+    }
+
+    // Company
+    @Test
+    public void Test_Company() {
+        given().headers("Authorization","Bearer ").
+                contentType("application/json").
+                when().
+                get(COMPANY_PAGE_URL + "").
                 then().
                 statusCode(200).log().all();
     }
+
+    // Country
     @Test
-    public void Test_Public_GDPR() {
-        String token = doPostRequestAuthorize(MAIN_PAGE_URL + "CreateDevice");
-        given().headers("Authorization","Bearer "+token).
+    public void Test_Country() {
+        given().headers("Authorization","Bearer ").
                 contentType("application/json").
                 when().
-                get(MAIN_PAGE_URL + "GetGDPR").
+                get(COUNTRY_PAGE_URL + "").
                 then().
                 statusCode(200).log().all();
     }
+
+    //Region
     @Test
-    public void Test_Public_GetProductsByCategory() {
-        String token = doPostRequestAuthorize(MAIN_PAGE_URL + "CreateDevice");
-        given().headers("Authorization","Bearer "+token).
+    public void Test_Region() {
+
+        given().headers("Authorization","Bearer ").
                 contentType("application/json").
                 when().
-                get(MAIN_PAGE_URL + "GetProductsByCategory").
+                get(REGION_PAGE_URL + "").
                 then().
                 statusCode(200).log().all();
     }
+
+    //Site
     @Test
-    public void Test_Public_GetReasons() {
-        String token = doPostRequestAuthorize(MAIN_PAGE_URL + "CreateDevice");
-        given().headers("Authorization","Bearer "+token).
+    public void Test_Site() {
+        //String token = doPostRequestAuthorize(SITE_PAGE_URL + "");
+        given().headers("Authorization","Bearer "/*+token*/).
                 contentType("application/json").
                 when().
-                get(MAIN_PAGE_URL + "GetReasons").
+                get(SITE_PAGE_URL + "").
                 then().
                 statusCode(200).log().all();
     }
+
+    //WorkCenter
+    @Test
+    public void Test_WorkCenter() {
+
+        given().headers("Authorization","Bearer ").
+                contentType("application/json").
+                when().
+                get(WORKCENTER_PAGE_URL + "").
+                then().
+                statusCode(200).log().all();
+    }
+
 }

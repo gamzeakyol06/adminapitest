@@ -10,30 +10,28 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
-
 import static io.restassured.RestAssured.*;
 
 public class Base {
 
-    public final static String MAIN_PAGE_URL1 = "https://sf.eldor.com.tr/PublicAPI/api/App/";
-    public final static String MAIN_PAGE_URL = "https://myeldor.eldor.com.tr/PublicAPI/api/App/";
-    public final static String NOTIFICATION_PAGE_URL = "https://sf.eldor.com.tr/NotificationAPI/api/Notification/";
+    public final static String CLIENT_PAGE_URL = "https://apitest.niso.dev/pamis/admin/Client";
+    public final static String COMPANY_PAGE_URL = "https://apitest.niso.dev/pamis/admin/Company";
+    public final static String COUNTRY_PAGE_URL = "https://apitest.niso.dev/pamis/admin/Country";
+    public final static String REGION_PAGE_URL = "https://apitest.niso.dev/pamis/admin/Region";
+    public final static String SITE_PAGE_URL = "https://apitest.niso.dev/pamis/admin/Site";
+    public final static String WORKCENTER_PAGE_URL = "https://apitest.niso.dev/pamis/admin/WorkCenter";
+    public final static String PRODUCTIONLOCATIONTYPE_PAGE_URL = "https://apitest.niso.dev/pamis/admin/ProductionLocationType";
 
     public static Response doGetRequest(String endpoint) {
         RestAssured.defaultParser = Parser.JSON;
         return given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).
-                        when().get(endpoint).
-                        then().contentType(ContentType.JSON).extract().response();
+                when().get(endpoint).
+                then().contentType(ContentType.JSON).extract().response();
     }
     public static String doPostRequestAuthorize(String endpoint) {
+
         HashMap map = new HashMap<>();
-
         map.put("osType", generateData());
-        map.put("appVersion", generateData());
-        map.put("osVersion", generateData());
-        map.put("deviceName", generateData());
-        map.put("deviceGUID", generateData());
-
         System.out.println(map);
 
         Response responsetoken =  given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).
@@ -42,20 +40,26 @@ public class Base {
                 post(endpoint).
                 then().
                 contentType(ContentType.JSON).extract().response();
-         String token = responsetoken.jsonPath().get("token");
-         return token;
+        String token = responsetoken.jsonPath().get("token");
+        return token;
     }
-    public static List<String> doGetResponseListUserID(@NotNull Response response) throws IOException {
-        return response.jsonPath().getList("userId");
+    public static List<String> doGetResponseName(@NotNull Response response) throws IOException {
+        return response.jsonPath().getList("name");
     }
-    public static List<String> doGetResponseListtoken(@NotNull Response response) throws IOException {
-        return response.jsonPath().getList("token");
+    public static List<Integer> doGetResponseListproductionLocationTypeID(@NotNull Response response) throws IOException {
+        return response.jsonPath().getList("productionLocationTypeID");
     }
     public static List<Integer> doGetResponseListID(@NotNull Response response) throws IOException {
         return response.jsonPath().getList("id");
     }
-    public static List<Integer> doGetResponseListAppID(@NotNull Response response) throws IOException {
-        return response.jsonPath().getList("applicationId");
+    public static List<Integer> doGetResponseListParentID(@NotNull Response response) throws IOException {
+        return response.jsonPath().getList("parentID");
+    }
+    public static List<Integer> doGetResponseListclientId(@NotNull Response response) throws IOException {
+        return response.jsonPath().getList("clientId");
+    }
+    public static List<String> doGetResponseListtoken(@NotNull Response response) throws IOException {
+        return response.jsonPath().getList("token");
     }
     public static List<String> doGetResponseList(@NotNull Response response) throws IOException {
         return response.jsonPath().get();
@@ -64,7 +68,11 @@ public class Base {
         String generateAlpha = RandomStringUtils.randomAlphanumeric(6);
         return generateAlpha;
     }
-    public static Integer generateDataNumber(){
+    public static String generateRandomDataforName(){
+        String generateAlpha = RandomStringUtils.randomAlphanumeric(10);
+        return generateAlpha;
+    }
+    public static Integer generateRandomDataforId(){
         Random rand = new Random();
         Integer generateAlphaNum = rand.nextInt(28);
         return generateAlphaNum;
