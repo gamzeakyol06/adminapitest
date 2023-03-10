@@ -75,4 +75,15 @@ public class GET_StatusCode_Test extends Base {
                 statusCode(200).log().all();
     }
 
+    //ProductionLocationType
+    @Test
+    public void Test_ProductionLocationType() {
+
+        given().headers("Authorization","Bearer ").
+                contentType("application/json").
+                when().
+                get(PRODUCTIONLOCATIONTYPE_PAGE_URL + "").
+                then().
+                statusCode(200).log().all();
+    }
 }

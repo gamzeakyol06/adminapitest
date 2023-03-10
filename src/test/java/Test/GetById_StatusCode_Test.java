@@ -71,7 +71,6 @@ public class GetById_StatusCode_Test extends Base{
     }*/
 
     @Test
-
     public void Test_CompanyWithClientById() throws IOException {
 
         Response response = doGetRequest(COMPANY_PAGE_URL);
