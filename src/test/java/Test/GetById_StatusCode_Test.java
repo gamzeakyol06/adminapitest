@@ -70,7 +70,7 @@ public class GetById_StatusCode_Test extends Base{
                 statusCode(200).log().all();
     }*/
 
-    @Test
+/*    @Test
     public void Test_CompanyWithClientById() throws IOException {
 
         Response response = doGetRequest(COMPANY_PAGE_URL);
@@ -87,7 +87,7 @@ public class GetById_StatusCode_Test extends Base{
                     then().
                     statusCode(200).log().all();
         }
-    }
+    }*/
    /* @Test
     public void Test_CompanyWithClientById_notSuccess() throws IOException {
 

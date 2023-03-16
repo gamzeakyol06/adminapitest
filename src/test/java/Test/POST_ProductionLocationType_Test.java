@@ -13,13 +13,14 @@ public class POST_ProductionLocationType_Test extends Base {
         @BeforeTest()
         public void BeforeMethod(){
 
-            map.put("id",4);
-            map.put("name","Test ProductionLocationType Created by Test Automation");
+            map.put("id",8);
+            map.put("name","Test ProductionLocationType");
             map.put("isDelete", false);
             map.put("isActive",true );
             map.put("createdBy", null);
-            map.put("createdDate",null);
+            map.put("createdDate","2023-03-08T05:56:52.344");
             map.put("modifiedBy", null);
+            map.put("modifiedDate", null);
             System.out.println(map);
         }
 
@@ -30,7 +31,7 @@ public class POST_ProductionLocationType_Test extends Base {
                     contentType("application/json").
                     body(map).
                     when().
-                    post(PRODUCTIONLOCATIONTYPE_PAGE_URL + "/Create").
+                    post(PRODUCTIONLOCATIONTYPE_PAGE_URL+ "/Create").
                     then().
                     statusCode(200).log().all();
         }
@@ -50,7 +51,7 @@ public class POST_ProductionLocationType_Test extends Base {
                     contentType("application/json").
                     body(map).
                     when().
-                    post(PRODUCTIONLOCATIONTYPE_PAGE_URL + "/Create").
+                    post(PRODUCTIONLOCATIONTYPE_PAGE_URL +"/Create").
                     then().
                     statusCode(400).log().all();
         }

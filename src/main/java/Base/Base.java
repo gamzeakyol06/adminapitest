@@ -14,13 +14,13 @@ import static io.restassured.RestAssured.*;
 
 public class Base {
 
-    public final static String CLIENT_PAGE_URL = "https://apitest.niso.dev/pamis/admin/Client";
-    public final static String COMPANY_PAGE_URL = "https://apitest.niso.dev/pamis/admin/Company";
-    public final static String COUNTRY_PAGE_URL = "https://apitest.niso.dev/pamis/admin/Country";
-    public final static String REGION_PAGE_URL = "https://apitest.niso.dev/pamis/admin/Region";
-    public final static String SITE_PAGE_URL = "https://apitest.niso.dev/pamis/admin/Site";
-    public final static String WORKCENTER_PAGE_URL = "https://apitest.niso.dev/pamis/admin/WorkCenter";
-    public final static String PRODUCTIONLOCATIONTYPE_PAGE_URL = "https://apitest.niso.dev/pamis/admin/ProductionLocationType";
+    public final static String CLIENT_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Client";
+    public final static String COMPANY_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Company";
+    public final static String COUNTRY_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Country";
+    public final static String REGION_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Region";
+    public final static String SITE_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Site";
+    public final static String WORKCENTER_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/WorkCenter";
+    public final static String PRODUCTIONLOCATIONTYPE_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/ProductionLocationType";
 
     public static Response doGetRequest(String endpoint) {
         RestAssured.defaultParser = Parser.JSON;
@@ -62,6 +62,9 @@ public class Base {
         return response.jsonPath().getList("token");
     }
     public static List<String> doGetResponseList(@NotNull Response response) throws IOException {
+        return response.jsonPath().get();
+    }
+    public static List<Boolean> doGetResponseisDelete(@NotNull Response response) throws IOException {
         return response.jsonPath().get();
     }
     public static String generateData(){

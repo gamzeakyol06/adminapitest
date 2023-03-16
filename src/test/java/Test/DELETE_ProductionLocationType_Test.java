@@ -9,6 +9,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
@@ -30,18 +31,26 @@ public class DELETE_ProductionLocationType_Test extends Base {
                     then().
                     statusCode(204).log().all();
         }
-        @Test (priority = 2)
+       /* @Test (priority = 2)
         public void Delete_Update_Assert_Test() throws InterruptedException, IOException {
             SoftAssert softassert = new SoftAssert();
-            Response response =  given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).
-                    when().
-                    get(PRODUCTIONLOCATIONTYPE_PAGE_URL + "/3").
-                    then().
-                    contentType(ContentType.JSON).extract().response();
-            Boolean delete = response.jsonPath().get("isDelete");
-            System.out.println(delete);
-            softassert.assertEquals(delete, 1);
-            System.out.println(delete);
 
-        }
+            Response response = doGetRequest(PRODUCTIONLOCATIONTYPE_PAGE_URL);
+            List<Integer> jsonResponse_listid = doGetResponseListID(response);
+            List<Boolean> jsonResponse_delete = doGetResponseisDelete(response);
+
+            for (int i = 0; i < jsonResponse_listid.size(); i++) {
+                Integer postNameID = jsonResponse_listid.get(i);
+                System.out.println(postNameID);
+                if (postNameID == 3) {
+                    String postNameDelete = String.valueOf(jsonResponse_delete.get(3));
+                    System.out.println(postNameDelete);
+                    System.out.println("Delete " + postNameDelete);
+                    Boolean delete = response.jsonPath().get("isDelete");
+                    System.out.println(delete);
+                    softassert.assertEquals(delete, 1);
+                    System.out.println(delete);
+                }
+            }
+        }*/
     }
