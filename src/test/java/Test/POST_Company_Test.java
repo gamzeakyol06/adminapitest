@@ -19,7 +19,7 @@ public class POST_Company_Test extends Base {
         map.put("name","Test Company Created by Test Automation");
         map.put("clientId",4);
         map.put("isDelete", false);
-        map.put("isActive",1 );
+        map.put("isActive",true);
         map.put("createdBy", null);
         map.put("createdDate",null);
         map.put("modifiedBy", null);
@@ -42,7 +42,7 @@ public class POST_Company_Test extends Base {
     public void POST_Create_Not_Success() throws InterruptedException {
         map.put("name",null);
         map.put("isDelete", null);
-        map.put("isActive",1 );
+        map.put("isActive",true );
         map.put("createdBy", null);
         map.put("createdDate",null);
         map.put("modifiedBy", null);

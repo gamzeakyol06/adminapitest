@@ -22,7 +22,7 @@ public class POST_WorkCenter_Test extends Base {
         map.put("parentId",1);
         map.put("isFinal",false);
         map.put("isDelete", null);
-        map.put("isActive",null );
+        map.put("isActive",true );
         map.put("createdBy", null);
         map.put("createdDate",null);
         map.put("modifiedBy",null);

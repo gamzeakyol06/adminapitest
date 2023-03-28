@@ -20,7 +20,7 @@ public class POST_Site_Test extends Base {
         map.put("countryId",1);
         map.put("productionLocationTypeId",1);
         map.put("isDelete", null);
-        map.put("isActive",1 );
+        map.put("isActive",true);
         map.put("createdBy", null);
         map.put("createdDate",null);
         map.put("modifiedBy", null);

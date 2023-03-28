@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.HashMap;
 import Base.Base;
+
+import javax.swing.plaf.metal.MetalScrollPaneUI;
+
 import static io.restassured.RestAssured.given;
 
 public class PUT_Site_Test extends Base {
@@ -20,6 +23,7 @@ public class PUT_Site_Test extends Base {
         map.put("name",generateRandomDataforName());
         map.put("companyId",1);
         map.put("countryId",1);
+        map.put("ProductionLocationTypeID",1);
         map.put("isDelete", false);
         map.put("isActive",true );
 

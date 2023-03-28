@@ -41,7 +41,7 @@ public class POST_ProductionLocationType_Test extends Base {
             map.put("id",0);
             map.put("name",null);
             map.put("isDelete", null);
-            map.put("isActive",1 );
+            map.put("isActive",true);
             map.put("createdBy", null);
             map.put("createdDate",null);
             map.put("modifiedBy", null);

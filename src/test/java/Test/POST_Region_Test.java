@@ -17,7 +17,7 @@ public class POST_Region_Test extends Base {
 
         map.put("name","Test Region Created by Test Automation");
         map.put("isDelete", null);
-        map.put("isActive",1 );
+        map.put("isActive",true );
         map.put("createdBy", null);
         map.put("createdDate",null);
         map.put("modifiedBy", null);

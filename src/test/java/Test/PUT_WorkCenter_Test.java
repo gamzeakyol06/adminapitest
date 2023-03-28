@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.HashMap;
 import Base.Base;
+
+import javax.swing.text.StyleContext;
+
 import static io.restassured.RestAssured.given;
 
 public class PUT_WorkCenter_Test extends Base {
@@ -20,7 +23,13 @@ public class PUT_WorkCenter_Test extends Base {
         map.put("name",generateRandomDataforName());
         map.put("isDelete", false);
         map.put("isActive",true );
-
+        map.put("siteID",19);
+        map.put("productionLocationTypeID",20);
+        map.put("sequenceNo","2");
+        map.put("parentID",21);
+        map.put("isFinal",false);
+        map.put("isDelete",false);
+        map.put("isActive",false);
         System.out.println(map);
     }
 
