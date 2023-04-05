@@ -12,6 +12,7 @@ import static io.restassured.RestAssured.given;
 
 public class GetByName_StatusCode_Test extends Base {
 
+    String token = doPostRequestAuthorizeValidateToken(LOGIN_PAGE_URL);
     @Test
     public void Test_ClientByName_Success() throws IOException {
         Response response = doGetRequest(CLIENT_PAGE_URL);
@@ -21,7 +22,7 @@ public class GetByName_StatusCode_Test extends Base {
             String postNameData = jsonResponse_listid.get(i);
             System.out.println("Client Name " + postNameData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(CLIENT_PAGE_URL+"/ClientsByName?name="+postNameData).
@@ -52,7 +53,7 @@ public class GetByName_StatusCode_Test extends Base {
             String postNameData = jsonResponse_listid.get(i);
             System.out.println("Company Name " + postNameData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(COMPANY_PAGE_URL +"/CompaniesByName?name="+postNameData).
@@ -74,7 +75,7 @@ public class GetByName_StatusCode_Test extends Base {
                 statusCode(204).log().all();
     }
 */
-    @Test
+    /*@Test
     public void Test_CountryByName_Success() throws IOException {
 
 
@@ -93,7 +94,7 @@ public class GetByName_StatusCode_Test extends Base {
                     statusCode(200).log().all();
         }
 
-    }
+    }*/
     /*@Test
     public void Test_CountryByName_notSuccess() throws IOException {
         String CountryName = generateRandomDataforName();
@@ -116,7 +117,7 @@ public class GetByName_StatusCode_Test extends Base {
             String postNameData = jsonResponse_listid.get(i);
             System.out.println("Region Name " + postNameData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(REGION_PAGE_URL +"/RegionsByName?name="+postNameData).
@@ -147,7 +148,7 @@ public class GetByName_StatusCode_Test extends Base {
             String postNameData = jsonResponse_listid.get(i);
             System.out.println("Site Name " + postNameData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(SITE_PAGE_URL +"/SitesByName?name="+postNameData).

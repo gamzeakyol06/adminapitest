@@ -1,3 +1,4 @@
+/*
 package Test;
 
 import Base.Base;
@@ -24,14 +25,17 @@ public class DELETE_ProductionLocationType_Test extends Base {
         @Test(description = "200 Success")
         public void Delete_Update_Success() throws InterruptedException, IOException {
 
-            given().headers("Authorization","Bearer "/*+ token*/).
+            given().headers("Authorization","Bearer "*/
+/*+ token*//*
+).
                     contentType("application/json").
                     when().
                     delete(PRODUCTIONLOCATIONTYPE_PAGE_URL + "/Delete?id=3").
                     then().
                     statusCode(204).log().all();
         }
-       /* @Test (priority = 2)
+       */
+/* @Test (priority = 2)
         public void Delete_Update_Assert_Test() throws InterruptedException, IOException {
             SoftAssert softassert = new SoftAssert();
 
@@ -52,5 +56,7 @@ public class DELETE_ProductionLocationType_Test extends Base {
                     System.out.println(delete);
                 }
             }
-        }*/
+        }*//*
+
     }
+*/

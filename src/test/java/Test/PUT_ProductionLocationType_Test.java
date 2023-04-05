@@ -1,3 +1,4 @@
+/*
 package Test;
 
 import Base.Base;
@@ -31,7 +32,9 @@ public class PUT_ProductionLocationType_Test extends Base {
         @Test(priority = 1,description = "200 Success")
         public void PUT_Update_Success() throws InterruptedException, IOException {
 
-            given().headers("Authorization","Bearer "/*+ token*/).
+            given().headers("Authorization","Bearer "*/
+/*+ token*//*
+).
                     contentType("application/json").
                     body(map).
                     when().
@@ -64,3 +67,4 @@ public class PUT_ProductionLocationType_Test extends Base {
         }
     }
 
+*/

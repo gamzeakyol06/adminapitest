@@ -15,6 +15,7 @@ import static io.restassured.RestAssured.given;
 
 public class PUT_WorkCenter_Test extends Base {
 
+    String token = doPostRequestAuthorizeValidateToken(LOGIN_PAGE_URL);
     public static HashMap map = new HashMap<>();
     @BeforeTest()
     public void BeforeMethod(){
@@ -36,7 +37,7 @@ public class PUT_WorkCenter_Test extends Base {
     @Test(priority = 1,description = "200 Success")
     public void PUT_Update_Success() throws InterruptedException, IOException {
 
-        given().headers("Authorization","Bearer "/*+ token*/).
+        given().headers("Authorization","Bearer "+ token).
                 contentType("application/json").
                 body(map).
                 when().
@@ -48,7 +49,7 @@ public class PUT_WorkCenter_Test extends Base {
     @Test (priority = 2)
     public void PUT_Update_Assert_Test() throws InterruptedException, IOException {
 
-        Response response =  given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).
+        Response response =  given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON,"Authorization","Bearer "+ token).
                 when().
                 get(WORKCENTER_PAGE_URL + "/2").
                 then().

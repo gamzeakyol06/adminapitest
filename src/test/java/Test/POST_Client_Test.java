@@ -9,6 +9,7 @@ import static io.restassured.RestAssured.given;
 
 public class POST_Client_Test extends Base {
 
+    String token = doPostRequestAuthorizeValidateToken(LOGIN_PAGE_URL);
     public static HashMap map = new HashMap<>();
 
     @BeforeTest()
@@ -16,7 +17,7 @@ public class POST_Client_Test extends Base {
 
         map.put("name","Test Client Created by Test Automation123");
         map.put("isDelete", null);
-        map.put("isActive",true );
+        //map.put("isActive",true );
         map.put("createdBy", null);
         map.put("createdDate",null);
         map.put("modifiedBy", null);
@@ -26,7 +27,7 @@ public class POST_Client_Test extends Base {
     @Test (priority = 1, description = "200 Success")
     public void POST_Create_Success() throws InterruptedException, IOException {
 
-        given().headers("Authorization","Bearer "/*+ token*/).
+        given().headers("Authorization","Bearer "+ token).
                 contentType("application/json").
                 body(map).
                 when().
@@ -45,7 +46,7 @@ public class POST_Client_Test extends Base {
         map.put("modifiedBy", null);
         System.out.println(map);
 
-        given().headers("Authorization","Bearer ").
+        given().headers("Authorization","Bearer"+token).
                 contentType("application/json").
                 body(map).
                 when().

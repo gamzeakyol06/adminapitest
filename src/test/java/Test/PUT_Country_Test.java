@@ -12,12 +12,13 @@ import static io.restassured.RestAssured.given;
 
     public class PUT_Country_Test extends Base {
 
+        String token = doPostRequestAuthorizeValidateToken(LOGIN_PAGE_URL);
         public static HashMap map = new HashMap<>();
         @BeforeTest()
         public void BeforeMethod(){
 
             map.put("id",2);
-            map.put("name",generateRandomDataforName());
+            map.put("externalID",generateRandomDataforId());
             map.put("regionId",1);
             map.put("isDelete", false);
             map.put("isActive",true );
@@ -28,7 +29,7 @@ import static io.restassured.RestAssured.given;
         @Test(priority = 1,description = "200 Success")
         public void PUT_Update_Success() throws InterruptedException, IOException {
 
-            given().headers("Authorization","Bearer "/*+ token*/).
+            given().headers("Authorization","Bearer "+ token).
                     contentType("application/json").
                     body(map).
                     when().
@@ -40,15 +41,15 @@ import static io.restassured.RestAssured.given;
         @Test (priority = 2)
         public void PUT_Update_Assert_Test() throws InterruptedException, IOException {
 
-            Response response =  given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).
+            Response response =  given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON,"Authorization","Bearer "+ token).
                     when().
                     get(COUNTRY_PAGE_URL + "/2").
                     then().
                     contentType(ContentType.JSON).extract().response();
-            String name = response.jsonPath().get("name");
-            Assert.assertEquals(name, map.get("name") );
-            System.out.println(name);
-            System.out.println(map.get("name"));
+            Integer externalID = response.jsonPath().get("externalID");
+            Assert.assertEquals(externalID, map.get("externalID") );
+            System.out.println(externalID);
+            System.out.println(map.get("externalID"));
 
         }
     }

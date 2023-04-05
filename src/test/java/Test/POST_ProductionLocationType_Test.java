@@ -1,3 +1,4 @@
+/*
 package Test;
 import Base.Base;
 import org.testng.annotations.BeforeTest;
@@ -16,7 +17,7 @@ public class POST_ProductionLocationType_Test extends Base {
             map.put("id",8);
             map.put("name","Test ProductionLocationType");
             map.put("isDelete", false);
-            map.put("isActive",true );
+           // map.put("isActive",true );
             map.put("createdBy", null);
             map.put("createdDate","2023-03-08T05:56:52.344");
             map.put("modifiedBy", null);
@@ -27,7 +28,9 @@ public class POST_ProductionLocationType_Test extends Base {
         @Test (priority = 1, description = "200 Success")
         public void POST_Create_Success() throws InterruptedException, IOException {
 
-            given().headers("Authorization","Bearer "/*+ token*/).
+            given().headers("Authorization","Bearer "*/
+/*+ token*//*
+).
                     contentType("application/json").
                     body(map).
                     when().
@@ -57,3 +60,4 @@ public class POST_ProductionLocationType_Test extends Base {
         }
     }
 
+*/

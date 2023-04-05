@@ -25,186 +25,173 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <body>
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">PamisAdminAPI_TEST</a></td><td class="numi">61</td><td class="numi">61</td><td class="numi">0</td><td class="numi">0</td><td class="numi">257.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">PamisAdminAPI_TEST</a></td><td class="numi">55</td><td class="numi">55</td><td class="numi">0</td><td class="numi">0</td><td class="numi">308.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr id="t1"><th colspan="5">PamisAdminAPI_TEST &#8212; passed</th></tr>
-<tr class="passedodd"><td>Test.PUT_Site_Test</td><td><a href="#m1"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984719646</td><td class="numi">566</td></tr>
-<tr class="passedeven"><td>Test.GetByName_StatusCode_Test</td><td><a href="#m2"><b>Test_RegionsByName_Success</b>  </a></td><td class="numi">1</td><td>1679984674978</td><td class="numi">20110</td></tr>
-<tr class="passedodd"><td>Test.POST_Company_Test</td><td><a href="#m3"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984712436</td><td class="numi">326</td></tr>
-<tr class="passedeven"><td rowspan="4">Test.GetById_StatusCode_Test</td><td><a href="#m4"><b>Test_WorkCenterById</b>  </a></td><td class="numi">1</td><td>1679984543577</td><td class="numi">26099</td></tr><tr class="passedeven"><td><a href="#m5"><b>Test_WorkCentersByParentId</b>  </a></td><td class="numi">1</td><td>1679984595815</td><td class="numi">26685</td></tr><tr class="passedeven"><td><a href="#m6"><b>Test_ClientById</b>  </a></td><td class="numi">1</td><td>1679984468809</td><td class="numi">16023</td></tr><tr class="passedeven"><td><a href="#m7"><b>Test_CountryById</b>  </a></td><td class="numi">1</td><td>1679984501560</td><td class="numi">12377</td></tr>
-<tr class="passedodd"><td>Test.GET_StatusCode_Test</td><td><a href="#m8"><b>Test_Site</b>  </a></td><td class="numi">1</td><td>1679984468168</td><td class="numi">314</td></tr>
-<tr class="passedeven"><td rowspan="2">Test.DELETE_WorkCenter_Test</td><td><a href="#m9"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984711330</td><td class="numi">296</td></tr><tr class="passedeven"><td><a href="#m10"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984711005</td><td class="numi">324</td></tr>
-<tr class="passedodd"><td>Test.GET_StatusCode_Test</td><td><a href="#m11"><b>Test_WorkCenter</b>  </a></td><td class="numi">1</td><td>1679984468484</td><td class="numi">324</td></tr>
-<tr class="passedeven"><td>Test.DELETE_Company_Test</td><td><a href="#m12"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984708282</td><td class="numi">344</td></tr>
-<tr class="passedodd"><td>Test.POST_Region_Test</td><td><a href="#m13"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984714243</td><td class="numi">324</td></tr>
-<tr class="passedeven"><td>Test.DELETE_Company_Test</td><td><a href="#m14"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984707945</td><td class="numi">336</td></tr>
-<tr class="passedodd"><td>Test.DELETE_Client_Test</td><td><a href="#m15"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984707331</td><td class="numi">298</td></tr>
-<tr class="passedeven"><td>Test.GetByName_StatusCode_Test</td><td><a href="#m16"><b>Test_CompanyByName_Success</b>  </a></td><td class="numi">1</td><td>1679984639415</td><td class="numi">24689</td></tr>
-<tr class="passedodd"><td>Test.PUT_WorkCenter_Test</td><td><a href="#m17"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984720932</td><td class="numi">323</td></tr>
-<tr class="passedeven"><td rowspan="2">Test.GetByName_StatusCode_Test</td><td><a href="#m18"><b>Test_ClientByName_Success</b>  </a></td><td class="numi">1</td><td>1679984622501</td><td class="numi">16912</td></tr><tr class="passedeven"><td><a href="#m19"><b>Test_CountryByName_Success</b>  </a></td><td class="numi">1</td><td>1679984664104</td><td class="numi">10874</td></tr>
-<tr class="passedodd"><td>Test.GetById_StatusCode_Test</td><td><a href="#m20"><b>Test_RegionById</b>  </a></td><td class="numi">1</td><td>1679984513938</td><td class="numi">17926</td></tr>
-<tr class="passedeven"><td>Test.PUT_Client_Test</td><td><a href="#m21"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984716240</td><td class="numi">297</td></tr>
-<tr class="passedodd"><td>Test.DELETE_ProductionLocationType_Test</td><td><a href="#m22"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984709282</td><td class="numi">285</td></tr>
-<tr class="passedeven"><td>Test.PUT_Company_Test</td><td><a href="#m23"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984716845</td><td class="numi">306</td></tr>
-<tr class="passedodd"><td>Test.POST_ProductionLocationType_Test</td><td><a href="#m24"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Client Name)")</a></td><td class="numi">1</td><td>1679984713950</td><td class="numi">292</td></tr>
-<tr class="passedeven"><td>Test.POST_Country_Test</td><td><a href="#m25"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984713071</td><td class="numi">319</td></tr>
-<tr class="passedodd"><td>Test.GetById_StatusCode_Test</td><td><a href="#m26"><b>Test_WorkCenterByLocationType</b>  </a></td><td class="numi">1</td><td>1679984569676</td><td class="numi">26139</td></tr>
-<tr class="passedeven"><td>Test.PUT_Country_Test</td><td><a href="#m27"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984717431</td><td class="numi">290</td></tr>
-<tr class="passedodd"><td>Test.DELETE_Country_Test</td><td><a href="#m28"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984708627</td><td class="numi">325</td></tr>
-<tr class="passedeven"><td>Test.DELETE_Region_Test</td><td><a href="#m29"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984709872</td><td class="numi">498</td></tr>
-<tr class="passedodd"><td>Test.GetById_StatusCode_Test</td><td><a href="#m30"><b>Test_CompanyById</b>  </a></td><td class="numi">1</td><td>1679984484833</td><td class="numi">16726</td></tr>
-<tr class="passedeven"><td>Test.PUT_Region_Test</td><td><a href="#m31"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984718706</td><td class="numi">288</td></tr>
-<tr class="passedodd"><td rowspan="2">Test.GET_StatusCode_Test</td><td><a href="#m32"><b>Test_Client</b>  </a></td><td class="numi">1</td><td>1679984464223</td><td class="numi">2638</td></tr><tr class="passedodd"><td><a href="#m33"><b>Test_Company</b>  </a></td><td class="numi">1</td><td>1679984466864</td><td class="numi">348</td></tr>
-<tr class="passedeven"><td>Test.PUT_Site_Test</td><td><a href="#m34"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984719313</td><td class="numi">333</td></tr>
-<tr class="passedodd"><td rowspan="2">Test.DELETE_Site_Test</td><td><a href="#m35"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984710685</td><td class="numi">320</td></tr><tr class="passedodd"><td><a href="#m36"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984710370</td><td class="numi">315</td></tr>
-<tr class="passedeven"><td>Test.POST_ProductionLocationType_Test</td><td><a href="#m37"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984713662</td><td class="numi">287</td></tr>
-<tr class="passedodd"><td>Test.PUT_WorkCenter_Test</td><td><a href="#m38"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984720213</td><td class="numi">718</td></tr>
-<tr class="passedeven"><td>Test.PUT_Client_Test</td><td><a href="#m39"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984716537</td><td class="numi">308</td></tr>
-<tr class="passedodd"><td>Test.DELETE_Region_Test</td><td><a href="#m40"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984709568</td><td class="numi">303</td></tr>
-<tr class="passedeven"><td>Test.GET_StatusCode_Test</td><td><a href="#m41"><b>Test_Region</b>  </a></td><td class="numi">1</td><td>1679984467842</td><td class="numi">325</td></tr>
-<tr class="passedodd"><td>Test.PUT_Company_Test</td><td><a href="#m42"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984717152</td><td class="numi">278</td></tr>
-<tr class="passedeven"><td>Test.PUT_Region_Test</td><td><a href="#m43"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984718994</td><td class="numi">319</td></tr>
-<tr class="passedodd"><td>Test.POST_WorkCenter_Test</td><td><a href="#m44"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty WorkCenter Name)")</a></td><td class="numi">1</td><td>1679984715923</td><td class="numi">316</td></tr>
-<tr class="passedeven"><td>Test.GetById_StatusCode_Test</td><td><a href="#m45"><b>Test_SiteById</b>  </a></td><td class="numi">1</td><td>1679984531865</td><td class="numi">11711</td></tr>
-<tr class="passedodd"><td rowspan="2">Test.POST_Client_Test</td><td><a href="#m46"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Client Name)")</a></td><td class="numi">1</td><td>1679984712130</td><td class="numi">305</td></tr><tr class="passedodd"><td><a href="#m47"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984711627</td><td class="numi">502</td></tr>
-<tr class="passedeven"><td>Test.PUT_ProductionLocationType_Test</td><td><a href="#m48"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984718384</td><td class="numi">321</td></tr>
-<tr class="passedodd"><td>Test.GET_StatusCode_Test</td><td><a href="#m49"><b>Test_ProductionLocationType</b>  </a></td><td class="numi">1</td><td>1679984467539</td><td class="numi">302</td></tr>
-<tr class="passedeven"><td>Test.POST_Region_Test</td><td><a href="#m50"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Region Name)")</a></td><td class="numi">1</td><td>1679984714568</td><td class="numi">293</td></tr>
-<tr class="passedodd"><td>Test.POST_Site_Test</td><td><a href="#m51"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984714862</td><td class="numi">333</td></tr>
-<tr class="passedeven"><td>Test.DELETE_Country_Test</td><td><a href="#m52"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984708952</td><td class="numi">330</td></tr>
-<tr class="passedodd"><td>Test.DELETE_Client_Test</td><td><a href="#m53"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984707631</td><td class="numi">314</td></tr>
-<tr class="passedeven"><td>Test.GetByName_StatusCode_Test</td><td><a href="#m54"><b>Test_SitesByName_Success</b>  </a></td><td class="numi">1</td><td>1679984695089</td><td class="numi">12240</td></tr>
-<tr class="passedodd"><td>Test.GET_StatusCode_Test</td><td><a href="#m55"><b>Test_Country</b>  </a></td><td class="numi">1</td><td>1679984467213</td><td class="numi">326</td></tr>
-<tr class="passedeven"><td>Test.PUT_ProductionLocationType_Test</td><td><a href="#m56"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984718054</td><td class="numi">330</td></tr>
-<tr class="passedodd"><td>Test.POST_Company_Test</td><td><a href="#m57"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Company Name)")</a></td><td class="numi">1</td><td>1679984712762</td><td class="numi">308</td></tr>
-<tr class="passedeven"><td>Test.PUT_Country_Test</td><td><a href="#m58"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1679984717722</td><td class="numi">331</td></tr>
-<tr class="passedodd"><td>Test.POST_Site_Test</td><td><a href="#m59"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Site Name)")</a></td><td class="numi">1</td><td>1679984715195</td><td class="numi">312</td></tr>
-<tr class="passedeven"><td>Test.POST_WorkCenter_Test</td><td><a href="#m60"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1679984715508</td><td class="numi">415</td></tr>
-<tr class="passedodd"><td>Test.POST_Country_Test</td><td><a href="#m61"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Country Name)")</a></td><td class="numi">1</td><td>1679984713390</td><td class="numi">271</td></tr>
+<tr class="passedodd"><td>Test.POST_Client_Test</td><td><a href="#m1"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606769530</td><td class="numi">317</td></tr>
+<tr class="passedeven"><td>Test.GetByName_StatusCode_Test</td><td><a href="#m2"><b>Test_ClientByName_Success</b>  </a></td><td class="numi">1</td><td>1680606682426</td><td class="numi">17940</td></tr>
+<tr class="passedodd"><td>Test.PUT_Client_Test</td><td><a href="#m3"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606765812</td><td class="numi">316</td></tr>
+<tr class="passedeven"><td>Test.GET_StatusCode_Test</td><td><a href="#m4"><b>Test_WorkCenter</b>  </a></td><td class="numi">1</td><td>1680606470272</td><td class="numi">355</td></tr>
+<tr class="passedodd"><td>Test.PUT_Region_Test</td><td><a href="#m5"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606767648</td><td class="numi">309</td></tr>
+<tr class="passedeven"><td>Test.POST_Country_Test</td><td><a href="#m6"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Country Name)")</a></td><td class="numi">1</td><td>1680606771132</td><td class="numi">280</td></tr>
+<tr class="passedodd"><td>Test.GetByName_StatusCode_Test</td><td><a href="#m7"><b>Test_SitesByName_Success</b>  </a></td><td class="numi">1</td><td>1680606750460</td><td class="numi">15351</td></tr>
+<tr class="passedeven"><td>Test.GetById_StatusCode_Test</td><td><a href="#m8"><b>Test_CompanyById</b>  </a></td><td class="numi">1</td><td>1680606488572</td><td class="numi">20661</td></tr>
+<tr class="passedodd"><td>Test.PUT_Client_Test</td><td><a href="#m9"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606766128</td><td class="numi">286</td></tr>
+<tr class="passedeven"><td rowspan="2">Test.GetById_StatusCode_Test</td><td><a href="#m10"><b>Test_SiteById</b>  </a></td><td class="numi">1</td><td>1680606578486</td><td class="numi">15508</td></tr><tr class="passedeven"><td><a href="#m11"><b>Test_CountryByExternalID</b>  </a></td><td class="numi">1</td><td>1680606509233</td><td class="numi">21749</td></tr>
+<tr class="passedodd"><td>Test.POST_Client_Test</td><td><a href="#m12"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Client Name)")</a></td><td class="numi">1</td><td>1680606769848</td><td class="numi">289</td></tr>
+<tr class="passedeven"><td>Test.POST_Company_Test</td><td><a href="#m13"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606770138</td><td class="numi">351</td></tr>
+<tr class="passedodd"><td>Test.PUT_WorkCenter_Test</td><td><a href="#m14"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606768912</td><td class="numi">319</td></tr>
+<tr class="passedeven"><td>Test.PUT_Country_Test</td><td><a href="#m15"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606767339</td><td class="numi">309</td></tr>
+<tr class="passedodd"><td>Test.GET_StatusCode_Test</td><td><a href="#m16"><b>Test_Site</b>  </a></td><td class="numi">1</td><td>1680606469962</td><td class="numi">309</td></tr>
+<tr class="passedeven"><td>Test.PUT_Country_Test</td><td><a href="#m17"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606767008</td><td class="numi">331</td></tr>
+<tr class="passedodd"><td>Test.PUT_Region_Test</td><td><a href="#m18"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606767957</td><td class="numi">298</td></tr>
+<tr class="passedeven"><td rowspan="2">Test.POST_WorkCenter_Test</td><td><a href="#m19"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606772665</td><td class="numi">304</td></tr><tr class="passedeven"><td><a href="#m20"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty WorkCenter Name)")</a></td><td class="numi">1</td><td>1680606772970</td><td class="numi">314</td></tr>
+<tr class="passedodd"><td rowspan="2">Test.GetById_StatusCode_Test</td><td><a href="#m21"><b>Test_RegionById</b>  </a></td><td class="numi">1</td><td>1680606552294</td><td class="numi">26191</td></tr><tr class="passedodd"><td><a href="#m22"><b>Test_WorkCenterByLocationType</b>  </a></td><td class="numi">1</td><td>1680606623106</td><td class="numi">29326</td></tr>
+<tr class="passedeven"><td>Test.DELETE_Country_Test</td><td><a href="#m23"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606465946</td><td class="numi">309</td></tr>
+<tr class="passedodd"><td>Test.GET_StatusCode_Test</td><td><a href="#m24"><b>Test_Region</b>  </a></td><td class="numi">1</td><td>1680606469597</td><td class="numi">365</td></tr>
+<tr class="passedeven"><td>Test.POST_Site_Test</td><td><a href="#m25"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606772069</td><td class="numi">321</td></tr>
+<tr class="passedodd"><td>Test.DELETE_Region_Test</td><td><a href="#m26"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606466576</td><td class="numi">329</td></tr>
+<tr class="passedeven"><td>Test.PUT_Site_Test</td><td><a href="#m27"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606768574</td><td class="numi">338</td></tr>
+<tr class="passedodd"><td>Test.POST_Company_Test</td><td><a href="#m28"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Company Name)")</a></td><td class="numi">1</td><td>1680606770490</td><td class="numi">298</td></tr>
+<tr class="passedeven"><td>Test.GetById_StatusCode_Test</td><td><a href="#m29"><b>Test_CountryById</b>  </a></td><td class="numi">1</td><td>1680606530982</td><td class="numi">21312</td></tr>
+<tr class="passedodd"><td>Test.POST_Site_Test</td><td><a href="#m30"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Site Name)")</a></td><td class="numi">1</td><td>1680606772390</td><td class="numi">274</td></tr>
+<tr class="passedeven"><td>Test.DELETE_Site_Test</td><td><a href="#m31"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606467254</td><td class="numi">307</td></tr>
+<tr class="passedodd"><td>Test.DELETE_Country_Test</td><td><a href="#m32"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606466255</td><td class="numi">320</td></tr>
+<tr class="passedeven"><td>Test.PUT_Site_Test</td><td><a href="#m33"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606768255</td><td class="numi">318</td></tr>
+<tr class="passedodd"><td>Test.DELETE_Client_Test</td><td><a href="#m34"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606464601</td><td class="numi">378</td></tr>
+<tr class="passedeven"><td>Test.GetById_StatusCode_Test</td><td><a href="#m35"><b>Test_ClientById</b>  </a></td><td class="numi">1</td><td>1680606470628</td><td class="numi">17943</td></tr>
+<tr class="passedodd"><td>Test.POST_Country_Test</td><td><a href="#m36"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606770788</td><td class="numi">343</td></tr>
+<tr class="passedeven"><td>Test.GET_StatusCode_Test</td><td><a href="#m37"><b>Test_Client</b>  </a></td><td class="numi">1</td><td>1680606468575</td><td class="numi">373</td></tr>
+<tr class="passedodd"><td>Test.GetById_StatusCode_Test</td><td><a href="#m38"><b>Test_WorkCenterById</b>  </a></td><td class="numi">1</td><td>1680606593995</td><td class="numi">29110</td></tr>
+<tr class="passedeven"><td>Test.POST_Region_Test</td><td><a href="#m39"><b>POST_Create_Not_Success</b>  ("400 Not Success (Empty Region Name)")</a></td><td class="numi">1</td><td>1680606771770</td><td class="numi">299</td></tr>
+<tr class="passedodd"><td>Test.DELETE_Company_Test</td><td><a href="#m40"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606465297</td><td class="numi">344</td></tr>
+<tr class="passedeven"><td>Test.DELETE_Region_Test</td><td><a href="#m41"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606466905</td><td class="numi">349</td></tr>
+<tr class="passedodd"><td>Test.POST_Region_Test</td><td><a href="#m42"><b>POST_Create_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606771413</td><td class="numi">356</td></tr>
+<tr class="passedeven"><td>Test.GetById_StatusCode_Test</td><td><a href="#m43"><b>Test_WorkCentersByParentId</b>  </a></td><td class="numi">1</td><td>1680606652433</td><td class="numi">29992</td></tr>
+<tr class="passedodd"><td>Test.PUT_WorkCenter_Test</td><td><a href="#m44"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606769232</td><td class="numi">298</td></tr>
+<tr class="passedeven"><td>Test.DELETE_Client_Test</td><td><a href="#m45"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606464981</td><td class="numi">315</td></tr>
+<tr class="passedodd"><td>Test.PUT_Company_Test</td><td><a href="#m46"><b>PUT_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606766706</td><td class="numi">301</td></tr>
+<tr class="passedeven"><td>Test.DELETE_Company_Test</td><td><a href="#m47"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606465642</td><td class="numi">304</td></tr>
+<tr class="passedodd"><td>Test.GET_StatusCode_Test</td><td><a href="#m48"><b>Test_Company</b>  </a></td><td class="numi">1</td><td>1680606468949</td><td class="numi">336</td></tr>
+<tr class="passedeven"><td>Test.DELETE_Site_Test</td><td><a href="#m49"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606467562</td><td class="numi">340</td></tr>
+<tr class="passedodd"><td>Test.GetByName_StatusCode_Test</td><td><a href="#m50"><b>Test_RegionsByName_Success</b>  </a></td><td class="numi">1</td><td>1680606725020</td><td class="numi">25440</td></tr>
+<tr class="passedeven"><td>Test.GET_StatusCode_Test</td><td><a href="#m51"><b>Test_Country</b>  </a></td><td class="numi">1</td><td>1680606469286</td><td class="numi">310</td></tr>
+<tr class="passedodd"><td>Test.DELETE_WorkCenter_Test</td><td><a href="#m52"><b>Delete_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606467903</td><td class="numi">339</td></tr>
+<tr class="passedeven"><td>Test.GetByName_StatusCode_Test</td><td><a href="#m53"><b>Test_CompanyByName_Success</b>  </a></td><td class="numi">1</td><td>1680606700366</td><td class="numi">24654</td></tr>
+<tr class="passedodd"><td>Test.PUT_Company_Test</td><td><a href="#m54"><b>PUT_Update_Success</b>  ("200 Success")</a></td><td class="numi">1</td><td>1680606766415</td><td class="numi">290</td></tr>
+<tr class="passedeven"><td>Test.DELETE_WorkCenter_Test</td><td><a href="#m55"><b>Delete_Update_Assert_Test</b>  </a></td><td class="numi">1</td><td>1680606468243</td><td class="numi">332</td></tr>
 </table>
 <h1>PamisAdminAPI_TEST</h1>
-<h2 id="m1">Test.PUT_Site_Test:PUT_Update_Assert_Test</h2>
+<h2 id="m1">Test.POST_Client_Test:POST_Create_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">Test.GetByName_StatusCode_Test:Test_RegionsByName_Success</h2>
+<h2 id="m2">Test.GetByName_StatusCode_Test:Test_ClientByName_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">Test.POST_Company_Test:POST_Create_Success</h2>
+<h2 id="m3">Test.PUT_Client_Test:PUT_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">Test.GetById_StatusCode_Test:Test_WorkCenterById</h2>
+<h2 id="m4">Test.GET_StatusCode_Test:Test_WorkCenter</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">Test.GetById_StatusCode_Test:Test_WorkCentersByParentId</h2>
+<h2 id="m5">Test.PUT_Region_Test:PUT_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">Test.GetById_StatusCode_Test:Test_ClientById</h2>
+<h2 id="m6">Test.POST_Country_Test:POST_Create_Not_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">Test.GetById_StatusCode_Test:Test_CountryById</h2>
+<h2 id="m7">Test.GetByName_StatusCode_Test:Test_SitesByName_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">Test.GET_StatusCode_Test:Test_Site</h2>
+<h2 id="m8">Test.GetById_StatusCode_Test:Test_CompanyById</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">Test.DELETE_WorkCenter_Test:Delete_Update_Assert_Test</h2>
+<h2 id="m9">Test.PUT_Client_Test:PUT_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">Test.DELETE_WorkCenter_Test:Delete_Update_Success</h2>
+<h2 id="m10">Test.GetById_StatusCode_Test:Test_SiteById</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">Test.GET_StatusCode_Test:Test_WorkCenter</h2>
+<h2 id="m11">Test.GetById_StatusCode_Test:Test_CountryByExternalID</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m12">Test.DELETE_Company_Test:Delete_Update_Assert_Test</h2>
+<h2 id="m12">Test.POST_Client_Test:POST_Create_Not_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m13">Test.POST_Region_Test:POST_Create_Success</h2>
+<h2 id="m13">Test.POST_Company_Test:POST_Create_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">Test.DELETE_Company_Test:Delete_Update_Success</h2>
+<h2 id="m14">Test.PUT_WorkCenter_Test:PUT_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">Test.DELETE_Client_Test:Delete_Update_Success</h2>
+<h2 id="m15">Test.PUT_Country_Test:PUT_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m16">Test.GetByName_StatusCode_Test:Test_CompanyByName_Success</h2>
+<h2 id="m16">Test.GET_StatusCode_Test:Test_Site</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m17">Test.PUT_WorkCenter_Test:PUT_Update_Assert_Test</h2>
+<h2 id="m17">Test.PUT_Country_Test:PUT_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m18">Test.GetByName_StatusCode_Test:Test_ClientByName_Success</h2>
+<h2 id="m18">Test.PUT_Region_Test:PUT_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m19">Test.GetByName_StatusCode_Test:Test_CountryByName_Success</h2>
+<h2 id="m19">Test.POST_WorkCenter_Test:POST_Create_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m20">Test.GetById_StatusCode_Test:Test_RegionById</h2>
+<h2 id="m20">Test.POST_WorkCenter_Test:POST_Create_Not_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m21">Test.PUT_Client_Test:PUT_Update_Success</h2>
+<h2 id="m21">Test.GetById_StatusCode_Test:Test_RegionById</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m22">Test.DELETE_ProductionLocationType_Test:Delete_Update_Success</h2>
+<h2 id="m22">Test.GetById_StatusCode_Test:Test_WorkCenterByLocationType</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m23">Test.PUT_Company_Test:PUT_Update_Success</h2>
+<h2 id="m23">Test.DELETE_Country_Test:Delete_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m24">Test.POST_ProductionLocationType_Test:POST_Create_Not_Success</h2>
+<h2 id="m24">Test.GET_StatusCode_Test:Test_Region</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m25">Test.POST_Country_Test:POST_Create_Success</h2>
+<h2 id="m25">Test.POST_Site_Test:POST_Create_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m26">Test.GetById_StatusCode_Test:Test_WorkCenterByLocationType</h2>
+<h2 id="m26">Test.DELETE_Region_Test:Delete_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m27">Test.PUT_Country_Test:PUT_Update_Success</h2>
+<h2 id="m27">Test.PUT_Site_Test:PUT_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m28">Test.DELETE_Country_Test:Delete_Update_Success</h2>
+<h2 id="m28">Test.POST_Company_Test:POST_Create_Not_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m29">Test.DELETE_Region_Test:Delete_Update_Assert_Test</h2>
+<h2 id="m29">Test.GetById_StatusCode_Test:Test_CountryById</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m30">Test.GetById_StatusCode_Test:Test_CompanyById</h2>
+<h2 id="m30">Test.POST_Site_Test:POST_Create_Not_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m31">Test.PUT_Region_Test:PUT_Update_Success</h2>
+<h2 id="m31">Test.DELETE_Site_Test:Delete_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m32">Test.GET_StatusCode_Test:Test_Client</h2>
+<h2 id="m32">Test.DELETE_Country_Test:Delete_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m33">Test.GET_StatusCode_Test:Test_Company</h2>
+<h2 id="m33">Test.PUT_Site_Test:PUT_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m34">Test.PUT_Site_Test:PUT_Update_Success</h2>
+<h2 id="m34">Test.DELETE_Client_Test:Delete_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m35">Test.DELETE_Site_Test:Delete_Update_Assert_Test</h2>
+<h2 id="m35">Test.GetById_StatusCode_Test:Test_ClientById</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m36">Test.DELETE_Site_Test:Delete_Update_Success</h2>
+<h2 id="m36">Test.POST_Country_Test:POST_Create_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m37">Test.POST_ProductionLocationType_Test:POST_Create_Success</h2>
+<h2 id="m37">Test.GET_StatusCode_Test:Test_Client</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m38">Test.PUT_WorkCenter_Test:PUT_Update_Success</h2>
+<h2 id="m38">Test.GetById_StatusCode_Test:Test_WorkCenterById</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m39">Test.PUT_Client_Test:PUT_Update_Assert_Test</h2>
+<h2 id="m39">Test.POST_Region_Test:POST_Create_Not_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m40">Test.DELETE_Region_Test:Delete_Update_Success</h2>
+<h2 id="m40">Test.DELETE_Company_Test:Delete_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m41">Test.GET_StatusCode_Test:Test_Region</h2>
+<h2 id="m41">Test.DELETE_Region_Test:Delete_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m42">Test.PUT_Company_Test:PUT_Update_Assert_Test</h2>
+<h2 id="m42">Test.POST_Region_Test:POST_Create_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m43">Test.PUT_Region_Test:PUT_Update_Assert_Test</h2>
+<h2 id="m43">Test.GetById_StatusCode_Test:Test_WorkCentersByParentId</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m44">Test.POST_WorkCenter_Test:POST_Create_Not_Success</h2>
+<h2 id="m44">Test.PUT_WorkCenter_Test:PUT_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m45">Test.GetById_StatusCode_Test:Test_SiteById</h2>
+<h2 id="m45">Test.DELETE_Client_Test:Delete_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m46">Test.POST_Client_Test:POST_Create_Not_Success</h2>
+<h2 id="m46">Test.PUT_Company_Test:PUT_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m47">Test.POST_Client_Test:POST_Create_Success</h2>
+<h2 id="m47">Test.DELETE_Company_Test:Delete_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m48">Test.PUT_ProductionLocationType_Test:PUT_Update_Assert_Test</h2>
+<h2 id="m48">Test.GET_StatusCode_Test:Test_Company</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m49">Test.GET_StatusCode_Test:Test_ProductionLocationType</h2>
+<h2 id="m49">Test.DELETE_Site_Test:Delete_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m50">Test.POST_Region_Test:POST_Create_Not_Success</h2>
+<h2 id="m50">Test.GetByName_StatusCode_Test:Test_RegionsByName_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m51">Test.POST_Site_Test:POST_Create_Success</h2>
+<h2 id="m51">Test.GET_StatusCode_Test:Test_Country</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m52">Test.DELETE_Country_Test:Delete_Update_Assert_Test</h2>
+<h2 id="m52">Test.DELETE_WorkCenter_Test:Delete_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m53">Test.DELETE_Client_Test:Delete_Update_Assert_Test</h2>
+<h2 id="m53">Test.GetByName_StatusCode_Test:Test_CompanyByName_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m54">Test.GetByName_StatusCode_Test:Test_SitesByName_Success</h2>
+<h2 id="m54">Test.PUT_Company_Test:PUT_Update_Success</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m55">Test.GET_StatusCode_Test:Test_Country</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m56">Test.PUT_ProductionLocationType_Test:PUT_Update_Success</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m57">Test.POST_Company_Test:POST_Create_Not_Success</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m58">Test.PUT_Country_Test:PUT_Update_Assert_Test</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m59">Test.POST_Site_Test:POST_Create_Not_Success</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m60">Test.POST_WorkCenter_Test:POST_Create_Success</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m61">Test.POST_Country_Test:POST_Create_Not_Success</h2>
+<h2 id="m55">Test.DELETE_WorkCenter_Test:Delete_Update_Assert_Test</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

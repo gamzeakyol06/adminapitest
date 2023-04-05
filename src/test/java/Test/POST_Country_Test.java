@@ -10,18 +10,15 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.given;
 
 public class POST_Country_Test extends Base {
+    String token = doPostRequestAuthorizeValidateToken(LOGIN_PAGE_URL);
     public static HashMap map = new HashMap<>();
 
     @BeforeTest()
     public void BeforeMethod(){
 
-        map.put("name","Test Country Created by Test Automation");
-        map.put("regionId", 1);
-        map.put("isDelete", null);
+        map.put("externalID",3);
+        map.put("regionId",4);
         map.put("isActive", true);
-        map.put("createdBy", null);
-        map.put("createdDate",null);
-        map.put("modifiedBy", null);
 
         System.out.println(map);
     }
@@ -29,7 +26,7 @@ public class POST_Country_Test extends Base {
     @Test(priority = 1, description = "200 Success")
     public void POST_Create_Success() throws InterruptedException, IOException {
 
-        given().headers("Authorization","Bearer "/*+ token*/).
+        given().headers("Authorization","Bearer "+ token).
                 contentType("application/json").
                 body(map).
                 when().
@@ -40,12 +37,13 @@ public class POST_Country_Test extends Base {
 
     @Test (priority = 2, description = "400 Not Success (Empty Country Name)")
     public void POST_Create_Not_Success() throws InterruptedException {
-        map.put("name",null);
-        map.put("regionId", 1);
+        map.put("externalID",0);
+        map.put("regionId", 0);
+        map.put("isActive", false);
 
         System.out.println(map);
 
-        given().headers("Authorization","Bearer ").
+        given().headers("Authorization","Bearer"+token).
                 contentType("application/json").
                 body(map).
                 when().

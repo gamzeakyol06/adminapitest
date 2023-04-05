@@ -21,12 +21,35 @@ public class Base {
     public final static String SITE_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Site";
     public final static String WORKCENTER_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/WorkCenter";
     public final static String PRODUCTIONLOCATIONTYPE_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/ProductionLocationType";
+    public final static String LOGIN_PAGE_URL = "https://apitest.niso.dev/pamis/identity/v1/Login";
 
     public static Response doGetRequest(String endpoint) {
+        String token = doPostRequestAuthorizeValidateToken(LOGIN_PAGE_URL);
         RestAssured.defaultParser = Parser.JSON;
-        return given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).
+        return given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON,"Authorization","Bearer " + token).
                 when().get(endpoint).
                 then().contentType(ContentType.JSON).extract().response();
+    }
+    public static String doPostRequestAuthorizeValidateToken(String endpoint) {
+
+        HashMap map = new HashMap<>();
+
+        map.put("username","akyolg");
+        map.put("password","Niso.2022!");
+        map.put("applicationId",0);
+        System.out.println(map);
+        RestAssured.defaultParser = Parser.JSON;
+        Response responsetoken =  given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).
+                body(map).
+                when().
+                post(endpoint).
+                then().
+                contentType(ContentType.JSON).extract().response();
+        System.out.println(responsetoken);
+
+        String token = responsetoken.jsonPath().getString("accessToken.code");
+        System.out.println(token);
+        return token;
     }
     public static String doPostRequestAuthorize(String endpoint) {
 
@@ -51,6 +74,9 @@ public class Base {
     }
     public static List<Integer> doGetResponseListID(@NotNull Response response) throws IOException {
         return response.jsonPath().getList("id");
+    }
+    public static List<Integer> doGetResponseexternalID(@NotNull Response response) throws IOException {
+        return response.jsonPath().getList("externalID");
     }
     public static List<Integer> doGetResponseListParentID(@NotNull Response response) throws IOException {
         return response.jsonPath().getList("parentID");
@@ -77,7 +103,7 @@ public class Base {
     }
     public static Integer generateRandomDataforId(){
         Random rand = new Random();
-        Integer generateAlphaNum = rand.nextInt(28);
+        Integer generateAlphaNum = rand.nextInt(250);
         return generateAlphaNum;
     }
 }

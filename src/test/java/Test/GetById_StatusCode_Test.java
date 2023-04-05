@@ -8,7 +8,7 @@ import java.util.List;
 import static io.restassured.RestAssured.given;
 
 public class GetById_StatusCode_Test extends Base{
-
+    String token = doPostRequestAuthorizeValidateToken(LOGIN_PAGE_URL);
     @Test
     public void Test_ClientById() throws IOException {
         Response response = doGetRequest(CLIENT_PAGE_URL);
@@ -18,7 +18,7 @@ public class GetById_StatusCode_Test extends Base{
             String postidData = Integer.toString(jsonResponse_listid.get(i));
             System.out.println("Client Id " + postidData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(CLIENT_PAGE_URL+"/"+postidData).
@@ -49,7 +49,7 @@ public class GetById_StatusCode_Test extends Base{
             String postidData = Integer.toString(jsonResponse_listid.get(i));
             System.out.println("Client Id " + postidData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(CLIENT_PAGE_URL+"/"+postidData).
@@ -110,7 +110,7 @@ public class GetById_StatusCode_Test extends Base{
             String postidData = Integer.toString(jsonResponse_listid.get(i));
             System.out.println("Country Id " + postidData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(COUNTRY_PAGE_URL+"/"+postidData).
@@ -118,6 +118,24 @@ public class GetById_StatusCode_Test extends Base{
                     statusCode(200).log().all();
         }
     }
+    @Test
+    public void Test_CountryByExternalID() throws IOException {
+        Response response = doGetRequest(COUNTRY_PAGE_URL);
+        List<Integer> jsonResponse_externalid = doGetResponseexternalID(response);
+
+        for (int i = 0; i < jsonResponse_externalid.size(); i++) {
+            String postidData = Integer.toString(jsonResponse_externalid.get(i));
+            System.out.println("External Id " + postidData);
+
+            given().headers("Authorization","Bearer " + token).
+                    contentType(ContentType.JSON).
+                    when().
+                    get(COUNTRY_PAGE_URL+"/CountriesByExternalID?externalID="+postidData).
+                    then().
+                    statusCode(200).log().all();
+        }
+    }
+
     /*@Test
     public void Test_CountryById_notSuccess() throws IOException {
 
@@ -141,7 +159,7 @@ public class GetById_StatusCode_Test extends Base{
             String postidData = Integer.toString(jsonResponse_listid.get(i));
             System.out.println("Region Id " + postidData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(REGION_PAGE_URL+"/"+postidData).
@@ -173,7 +191,7 @@ public class GetById_StatusCode_Test extends Base{
             String postidData = Integer.toString(jsonResponse_listid.get(i));
             System.out.println("Site Id " + postidData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(SITE_PAGE_URL+"/"+postidData).
@@ -205,7 +223,7 @@ public class GetById_StatusCode_Test extends Base{
             String postidData = Integer.toString(jsonResponse_listid.get(i));
             System.out.println("WorkCenter Id " + postidData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(WORKCENTER_PAGE_URL+"/"+postidData).
@@ -237,7 +255,7 @@ public class GetById_StatusCode_Test extends Base{
             String postidData = Integer.toString(jsonResponse_listid.get(i));
             System.out.println("Parent Id " + postidData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(WORKCENTER_PAGE_URL+"/WorkCentersByParentId?Id="+postidData).
@@ -256,7 +274,7 @@ public class GetById_StatusCode_Test extends Base{
             String postidData = Integer.toString(jsonResponse_listid.get(i));
             System.out.println("ProductionLocationTypeID Id " + postidData);
 
-            given().
+            given().headers("Authorization","Bearer " + token).
                     contentType(ContentType.JSON).
                     when().
                     get(WORKCENTER_PAGE_URL+"/WorkCentersByLocationType?ProductionLocationTypeName="+postidData).
