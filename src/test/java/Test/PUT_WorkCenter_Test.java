@@ -20,7 +20,7 @@ public class PUT_WorkCenter_Test extends Base {
     @BeforeTest()
     public void BeforeMethod(){
 
-        map.put("id",2);
+        map.put("id",108);
         map.put("name",generateRandomDataforName());
         map.put("isDelete", false);
         map.put("isActive",true );
@@ -41,7 +41,7 @@ public class PUT_WorkCenter_Test extends Base {
                 contentType("application/json").
                 body(map).
                 when().
-                put(WORKCENTER_PAGE_URL + "/Update?id="+2).
+                put(WORKCENTER_PAGE_URL + "/Update?id="+108).
                 then().
                 statusCode(204).log().all();
     }
@@ -51,7 +51,7 @@ public class PUT_WorkCenter_Test extends Base {
 
         Response response =  given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON,"Authorization","Bearer "+ token).
                 when().
-                get(WORKCENTER_PAGE_URL + "/2").
+                get(WORKCENTER_PAGE_URL + "/108").
                 then().
                 contentType(ContentType.JSON).extract().response();
         String name = response.jsonPath().get("name");
