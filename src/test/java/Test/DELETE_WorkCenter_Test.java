@@ -29,7 +29,7 @@ public class DELETE_WorkCenter_Test extends Base {
         given().headers("Authorization","Bearer "+ token).
                 contentType("application/json").
                 when().
-                delete(WORKCENTER_PAGE_URL + "/Delete?id=3").
+                delete(WORKCENTER_PAGE_URL + "/Delete?id=109").
                 then().
                 statusCode(204).log().all();
     }
@@ -39,7 +39,7 @@ public class DELETE_WorkCenter_Test extends Base {
 
         Response response =  given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON,"Authorization","Bearer "+ token).
                 when().
-                get(WORKCENTER_PAGE_URL + "/3").
+                get(WORKCENTER_PAGE_URL + "/109").
                 then().
                 contentType(ContentType.JSON).extract().response();
         Boolean delete = response.jsonPath().get("isDelete");
