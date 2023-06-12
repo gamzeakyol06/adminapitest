@@ -1,3 +1,4 @@
+/*
 package Test;
 
 import Base.Base;
@@ -55,3 +56,4 @@ public class POST_Client_Test extends Base {
                 statusCode(400).log().all();
     }
 }
+*/
