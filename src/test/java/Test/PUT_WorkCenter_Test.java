@@ -20,7 +20,7 @@ public class PUT_WorkCenter_Test extends Base {
     @BeforeTest()
     public void BeforeMethod(){
 
-        map.put("id",108);
+        map.put("id",16);
         map.put("name",generateRandomDataforName());
         map.put("isDelete", false);
         map.put("isActive",true );
