@@ -14,14 +14,15 @@ import static io.restassured.RestAssured.*;
 
 public class Base {
 
-    public final static String CLIENT_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Client";
-    public final static String COMPANY_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Company";
-    public final static String COUNTRY_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Country";
-    public final static String REGION_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Region";
-    public final static String SITE_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/Site";
-    public final static String WORKCENTER_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/WorkCenter";
-    public final static String PRODUCTIONLOCATIONTYPE_PAGE_URL = "https://apitest.niso.dev/pamis/admin/organisation/ProductionLocationType";
-    public final static String LOGIN_PAGE_URL = "https://apitest.niso.dev/pamis/identity/v1/Login";
+    public final static String CLIENT_PAGE_URL = "https://api.eldor.com.tr/pamis/admin/organization/Client";
+    public final static String COMPANY_PAGE_URL = "https://api.eldor.com.tr/pamis/admin/organization/Company";
+    public final static String COUNTRY_PAGE_URL = "https://api.eldor.com.tr/pamis/admin/organization/Country";
+    public final static String REGION_PAGE_URL = "https://api.eldor.com.tr/pamis/admin/organization/Region";
+    public final static String SITE_PAGE_URL = "https://api.eldor.com.tr/pamis/admin/organization/Site";
+    public final static String WORKCENTER_PAGE_URL = "https://api.eldor.com.tr/pamis/admin/organization/WorkCenter";
+    public final static String PRODUCTIONTARGET_PAGE_URL = "https://api.eldor.com.tr/pamis/admin/organization/ProductionTarget";
+    public final static String PRODUCTIONLOCATIONTYPE_PAGE_URL = "https://api.eldor.com.tr/pamis/admin/organization/ProductionLocationType";
+    public final static String LOGIN_PAGE_URL = "https://api.eldor.com.tr/pamis/identity/v1/Login";
 
     public static Response doGetRequest(String endpoint) {
         String token = doPostRequestAuthorizeValidateToken(LOGIN_PAGE_URL);
@@ -32,11 +33,16 @@ public class Base {
     }
     public static String doPostRequestAuthorizeValidateToken(String endpoint) {
 
+        System.setProperty("javax.net.ssl.trustStore","clientTrustStore.key");
+        System.setProperty("javax.net.ssl.trustStorePassword","qwerty");
+
+        RestAssured.useRelaxedHTTPSValidation(); // yetki problemi cozuldu
+
         HashMap map = new HashMap<>();
 
         map.put("username","akyolg");
         map.put("password","Niso.2022!");
-        map.put("applicationId",0);
+        map.put("applicationId",98);
         System.out.println(map);
         RestAssured.defaultParser = Parser.JSON;
         Response responsetoken =  given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).

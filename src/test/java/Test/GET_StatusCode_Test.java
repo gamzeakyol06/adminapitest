@@ -70,20 +70,31 @@ public class GET_StatusCode_Test extends Base {
         given().headers("Authorization","Bearer "+ token).
                 contentType("application/json").
                 when().
-                get(WORKCENTER_PAGE_URL + "").
+                get( WORKCENTER_PAGE_URL+ "").
                 then().
                 statusCode(200).log().all();
     }
 
-    //ProductionLocationType
-    /*@Test
-    public void Test_ProductionLocationType() {
+    //ProductionTarget
+    @Test
+    public void Test_ProductionTarget() {
 
-        given().headers("Authorization","Bearer ").
+        given().headers("Authorization","Bearer "+token).
                 contentType("application/json").
                 when().
-                get(PRODUCTIONLOCATIONTYPE_PAGE_URL + "").
+                get(PRODUCTIONTARGET_PAGE_URL+ "").
                 then().
                 statusCode(200).log().all();
-    }*/
+    }
+    //ProductionTarget
+    @Test
+    public void Test_ProductionLocationType() {
+
+        given().headers("Authorization","Bearer "+token).
+                contentType("application/json").
+                when().
+                get(PRODUCTIONLOCATIONTYPE_PAGE_URL+ "").
+                then().
+                statusCode(200).log().all();
+    }
 }
