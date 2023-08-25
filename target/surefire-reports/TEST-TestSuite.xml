@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="21" failures="0" name="TestSuite" time="21.038" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2021.1.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="16.0.1+9-24"/>
+    <property name="sun.boot.library.path" value="C:\Java\jdk-16.0.1\bin"/>
+    <property name="user.country.format" value="TR"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\akyolg\IdeaProjects\pamisadminapitest"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\akyolg\IdeaProjects\pamisadminapitest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="16.0.1+9-24"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\akyolg\AppData\Local\Temp\5\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows Server 2019"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.1\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.1\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1254"/>
+    <property name="java.library.path" value="C:\Java\jdk-16.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Java\jre1.8.0_291\bin;C:\kafka_2.13-2.8.0\bin;C:\apache-zookeeper-3.7.0-bin\bin;;C:\Program Files\Docker;C:\Users\akyolg\AppData\Local\Microsoft\WindowsApps;C:\Users\akyolg\AppData\Local\Programs\Git\cmd;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.1\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="60.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\akyolg"/>
+    <property name="user.timezone" value="Europe/Istanbul"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="16"/>
+    <property name="user.name" value="akyolg"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1.1 install"/>
+    <property name="java.home" value="C:\Java\jdk-16.0.1"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language.format" value="tr"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="16.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.1\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Test.GetById_StatusCode_Test" name="Test_ClientById" time="0.97"/>
+  <testcase classname="Test.GetById_StatusCode_Test" name="Test_CompanyById" time="0.902"/>
+  <testcase classname="Test.GetById_StatusCode_Test" name="Test_CountryByExternalID" time="1.396"/>
+  <testcase classname="Test.GetById_StatusCode_Test" name="Test_CountryById" time="1.342"/>
+  <testcase classname="Test.GetById_StatusCode_Test" name="Test_RegionById" time="1.157"/>
+  <testcase classname="Test.GetById_StatusCode_Test" name="Test_SiteById" time="1.139"/>
+  <testcase classname="Test.GetById_StatusCode_Test" name="Test_WorkCenterById" time="2.888"/>
+  <testcase classname="Test.GetById_StatusCode_Test" name="Test_WorkCenterByLocationType" time="2.859"/>
+  <testcase classname="Test.GetById_StatusCode_Test" name="Test_WorkCentersByParentId" time="2.797"/>
+  <testcase classname="Test.GetByName_StatusCode_Test" name="Test_ClientByName_Success" time="0.78"/>
+  <testcase classname="Test.GetByName_StatusCode_Test" name="Test_CompanyByName_Success" time="1.257"/>
+  <testcase classname="Test.GetByName_StatusCode_Test" name="Test_RegionsByName_Success" time="1.118"/>
+  <testcase classname="Test.GetByName_StatusCode_Test" name="Test_SitesByName_Success" time="1.123"/>
+  <testcase classname="Test.GET_StatusCode_Test" name="Test_Client" time="0.161"/>
+  <testcase classname="Test.GET_StatusCode_Test" name="Test_Company" time="0.161"/>
+  <testcase classname="Test.GET_StatusCode_Test" name="Test_Country" time="0.163"/>
+  <testcase classname="Test.GET_StatusCode_Test" name="Test_ProductionLocationType" time="0.165"/>
+  <testcase classname="Test.GET_StatusCode_Test" name="Test_ProductionTarget" time="0.172"/>
+  <testcase classname="Test.GET_StatusCode_Test" name="Test_Region" time="0.161"/>
+  <testcase classname="Test.GET_StatusCode_Test" name="Test_Site" time="0.163"/>
+  <testcase classname="Test.GET_StatusCode_Test" name="Test_WorkCenter" time="0.164"/>
+</testsuite>

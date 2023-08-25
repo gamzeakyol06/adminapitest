@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 25 16:26:41 TRT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>21 seconds (21068 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.GetByName_StatusCode_Test.Test_SitesByName_Success()'><b>Test_SitesByName_Success</b><br>Test class: Test.GetByName_StatusCode_Test</td>
+<td></td>
+<td>1</td>
+<td>Test.GetByName_StatusCode_Test@54b2fc58</td></tr>
+<tr>
+<td title='Test.GET_StatusCode_Test.Test_WorkCenter()'><b>Test_WorkCenter</b><br>Test class: Test.GET_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GET_StatusCode_Test@5995851e</td></tr>
+<tr>
+<td title='Test.GetById_StatusCode_Test.Test_CompanyById()'><b>Test_CompanyById</b><br>Test class: Test.GetById_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GetById_StatusCode_Test@7b2ccba5</td></tr>
+<tr>
+<td title='Test.GetByName_StatusCode_Test.Test_ClientByName_Success()'><b>Test_ClientByName_Success</b><br>Test class: Test.GetByName_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GetByName_StatusCode_Test@54b2fc58</td></tr>
+<tr>
+<td title='Test.GET_StatusCode_Test.Test_ProductionLocationType()'><b>Test_ProductionLocationType</b><br>Test class: Test.GET_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GET_StatusCode_Test@5995851e</td></tr>
+<tr>
+<td title='Test.GET_StatusCode_Test.Test_ProductionTarget()'><b>Test_ProductionTarget</b><br>Test class: Test.GET_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GET_StatusCode_Test@5995851e</td></tr>
+<tr>
+<td title='Test.GET_StatusCode_Test.Test_Country()'><b>Test_Country</b><br>Test class: Test.GET_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GET_StatusCode_Test@5995851e</td></tr>
+<tr>
+<td title='Test.GET_StatusCode_Test.Test_Region()'><b>Test_Region</b><br>Test class: Test.GET_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GET_StatusCode_Test@5995851e</td></tr>
+<tr>
+<td title='Test.GetById_StatusCode_Test.Test_CountryById()'><b>Test_CountryById</b><br>Test class: Test.GetById_StatusCode_Test</td>
+<td></td>
+<td>1</td>
+<td>Test.GetById_StatusCode_Test@7b2ccba5</td></tr>
+<tr>
+<td title='Test.GetByName_StatusCode_Test.Test_RegionsByName_Success()'><b>Test_RegionsByName_Success</b><br>Test class: Test.GetByName_StatusCode_Test</td>
+<td></td>
+<td>1</td>
+<td>Test.GetByName_StatusCode_Test@54b2fc58</td></tr>
+<tr>
+<td title='Test.GetById_StatusCode_Test.Test_SiteById()'><b>Test_SiteById</b><br>Test class: Test.GetById_StatusCode_Test</td>
+<td></td>
+<td>1</td>
+<td>Test.GetById_StatusCode_Test@7b2ccba5</td></tr>
+<tr>
+<td title='Test.GetById_StatusCode_Test.Test_WorkCentersByParentId()'><b>Test_WorkCentersByParentId</b><br>Test class: Test.GetById_StatusCode_Test</td>
+<td></td>
+<td>2</td>
+<td>Test.GetById_StatusCode_Test@7b2ccba5</td></tr>
+<tr>
+<td title='Test.GetByName_StatusCode_Test.Test_CompanyByName_Success()'><b>Test_CompanyByName_Success</b><br>Test class: Test.GetByName_StatusCode_Test</td>
+<td></td>
+<td>1</td>
+<td>Test.GetByName_StatusCode_Test@54b2fc58</td></tr>
+<tr>
+<td title='Test.GetById_StatusCode_Test.Test_WorkCenterById()'><b>Test_WorkCenterById</b><br>Test class: Test.GetById_StatusCode_Test</td>
+<td></td>
+<td>2</td>
+<td>Test.GetById_StatusCode_Test@7b2ccba5</td></tr>
+<tr>
+<td title='Test.GetById_StatusCode_Test.Test_ClientById()'><b>Test_ClientById</b><br>Test class: Test.GetById_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GetById_StatusCode_Test@7b2ccba5</td></tr>
+<tr>
+<td title='Test.GetById_StatusCode_Test.Test_RegionById()'><b>Test_RegionById</b><br>Test class: Test.GetById_StatusCode_Test</td>
+<td></td>
+<td>1</td>
+<td>Test.GetById_StatusCode_Test@7b2ccba5</td></tr>
+<tr>
+<td title='Test.GetById_StatusCode_Test.Test_CountryByExternalID()'><b>Test_CountryByExternalID</b><br>Test class: Test.GetById_StatusCode_Test</td>
+<td></td>
+<td>1</td>
+<td>Test.GetById_StatusCode_Test@7b2ccba5</td></tr>
+<tr>
+<td title='Test.GET_StatusCode_Test.Test_Client()'><b>Test_Client</b><br>Test class: Test.GET_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GET_StatusCode_Test@5995851e</td></tr>
+<tr>
+<td title='Test.GET_StatusCode_Test.Test_Company()'><b>Test_Company</b><br>Test class: Test.GET_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GET_StatusCode_Test@5995851e</td></tr>
+<tr>
+<td title='Test.GET_StatusCode_Test.Test_Site()'><b>Test_Site</b><br>Test class: Test.GET_StatusCode_Test</td>
+<td></td>
+<td>0</td>
+<td>Test.GET_StatusCode_Test@5995851e</td></tr>
+<tr>
+<td title='Test.GetById_StatusCode_Test.Test_WorkCenterByLocationType()'><b>Test_WorkCenterByLocationType</b><br>Test class: Test.GetById_StatusCode_Test</td>
+<td></td>
+<td>2</td>
+<td>Test.GetById_StatusCode_Test@7b2ccba5</td></tr>
+</table><p>
+</body>
+</html>
