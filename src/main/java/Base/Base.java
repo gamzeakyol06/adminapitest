@@ -33,10 +33,10 @@ public class Base {
     }
     public static String doPostRequestAuthorizeValidateToken(String endpoint) {
 
-        System.setProperty("javax.net.ssl.trustStore","clientTrustStore.key");
-        System.setProperty("javax.net.ssl.trustStorePassword","qwerty");
-
-        RestAssured.useRelaxedHTTPSValidation(); // yetki problemi cozuldu
+//        System.setProperty("javax.net.ssl.trustStore","clientTrustStore.key");
+//        System.setProperty("javax.net.ssl.trustStorePassword","qwerty");
+//
+//        RestAssured.useRelaxedHTTPSValidation(); // yetki problemi cozuldu
 
         HashMap map = new HashMap<>();
 
